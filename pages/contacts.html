@@ -1,6 +1,6 @@
-<h3 class="text-center">List Of Contacts</h3>
+<h3 class="text-center">List of Contacts</h3>
 <hr>
 <p class="text-center">
-    <button class="btn btn-success btn-lg" ng-click="redirectToAddPage()">Add Contact</button>
+    <button class="btn btn-lg add-contact" ng-click="redirectToAddPage()">Add Contact</button>
 </p>
 <contact-tile contact-object="contact" delete-contact="deleteContact(contact)" ng-repeat="contact in contacts"></contact-tile>

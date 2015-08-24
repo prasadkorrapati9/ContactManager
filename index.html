@@ -5,17 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta charset="UTF-8">
 
-        <!-- load bootstrap and fontawesome via CDN -->
         <link rel="stylesheet" href="library/bootstrap/dist/css/bootstrap.css" media="screen" />
         <link rel="stylesheet" href="library/font-awesome/css/font-awesome.css" />
         <link rel="stylesheet" href="css/app.css" />
-        <style>
-            html, body, input, select, textarea
-            {
-                font-size: 1.05em;
-            }
-        </style>
-
         <script src="library/angular/angular.js"></script>
         <script src="library/angular/angular-route.js"></script>
         <script src="library/underscore/underscore.js"></script>
@@ -28,20 +20,19 @@
         <script src="directives/contactTile.js"></script>
     </head>
     <body>
-
         <header>
-			<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand">Contact Manager</a>
-				</div>
-			</div>
-			</nav>
-		</header>
+            <nav class="navbar navbar-default header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand title">Contact Manager</a>
+                </div>
+            </div>
+            </nav>
+        </header>
 
-        <div class="container">
+        <div class="container ">
             <div ng-view></div>
-		</div>
+        </div>
 
     </body>
 </html>

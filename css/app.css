@@ -8,11 +8,48 @@ dd {
 
 a.edit:hover, a.delete:hover {
     text-decoration: none;
+    color: #fff;
 }
 .tile {
     padding-top: 50px;
+    padding-left: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.panel-heading a {
+	color: black;
+}
+
+.media-body {
+	padding-top: 20px;
 }
 .image-container {
     float: left;
     margin-right: 25px;
+}
+
+nav.header {
+	background-color: #206E9F;
+	border-color: #206E9F;
+	border-radius: 0px;
+}
+.title {
+	color: #FFF !important;
+}
+
+.add-contact:hover, .add-contact, .save-button{
+    color: #fff;
+    background-color: #2275C8;
+    border-radius: 6px;
+    box-shadow: inset -0px -4px #225A85;
+    height: 45px;
+    min-width: 100px;
+}
+
+.cancel-button {
+	color: #fff;
+	background-color: #E76A66;
+    /*box-shadow: inset -0px -4px #C51F41;*/
+    box-shadow: inset -0px -4px #C13C54;
 }

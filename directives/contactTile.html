@@ -1,22 +1,24 @@
-<div  class=" tile col-xs-12 col-sm-6 col-md-4 col-lg-4">
-    <div class="image-container pull-left">
-        <img src="{{contactObject.image}}" class="img-circle"/>
-    </div>
-    <div class=" media-heading">
-        <h4>
-            {{contactObject.name}}
-            <span>
-                <a href="#/edit/{{contactObject.id}}" class="edit fa fa-pencil-square-o"></a>
-                <a class="delete fa fa-trash-o" ng-click="deleteContact({contact: contactObject})"></a>
-            </span>
-        </h4>
-    </div>
-    <div class="media-body ">
-        <d1>
-            <dt>Phone Number:</dt>
-            <dd>{{contactObject.tel}}</dd>
-            <dt>Email:</dt>
-            <dd>{{contactObject.email}}</dd>
-        </d1>
+<div  class=" tile col-md-6 col-lg-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4>
+                {{contactObject.name}}
+                <span class="pull-right">
+                    <a href="#/edit/{{contactObject.id}}" class="edit fa fa-pencil-square-o"></a>
+                    <a class="delete fa fa-trash-o" ng-click="deleteContact({contact: contactObject})"></a>
+                </span>
+            </h4>
+        </div>
+        <div class="panel-body">
+            <img src="{{contactObject.image}}" class="img-circle pull-left"/>
+            <div class="media-body ">
+                <d1>
+                    <dt>Phone Number:</dt>
+                    <dd>{{contactObject.tel}}</dd>
+                    <dt>Email:</dt>
+                    <dd>{{contactObject.email}}</dd>
+                </d1>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,31 +1,31 @@
 <h3 class="text-center">Edit Contact</h3>
 <hr>
-<form>
+<form class="form-horizontal">
     <div class="form-group col-xs-12">
-        <label class="control-label col-xs-12 col-md-3 col-lg-3" for="inputPassword">Full name:</label>
-        <div class="col-xs-9">
+        <label class="control-label col-sm-4" for="inputPassword">Full name:</label>
+        <div class="col-sm-6">
             <input type="text" class="form-control" ng-model= "fullName" id="inputPassword" placeholder="Full name">
         </div>
     </div>
     <div class="form-group col-xs-12">
-        <label class="control-label col-xs-12 col-md-3 col-lg-3" for="inputEmail">Email address:</label>
-        <div class="col-xs-9">
+        <label class="control-label col-sm-4" for="inputEmail">Email address:</label>
+        <div class="col-sm-6">
             <input type="email" class="form-control" ng-model="email" id="inputEmail" placeholder="Email address">
         </div>
     </div>
 
     <div class="form-group col-xs-12">
-        <label class="control-label col-xs-12 col-md-3 col-lg-3" for="confirmPassword">Telephone number:</label>
-        <div class="col-xs-9">
+        <label class="control-label col-sm-4" for="confirmPassword">Telephone number:</label>
+        <div class="col-sm-6">
             <input type="tel" class="form-control" ng-model="telephone" id="confirmPassword" placeholder="Telephone number">
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group col-sm-12">
         <div class="col-sm-offset-4 col-sm-3">
-            <button type="submit" class="btn btn-lg btn-success col-xs-12" ng-click="updateContact()">Submit</button>
+            <button type="submit" class="btn btn-lg save-button col-xs-12" ng-click="updateContact()">Submit</button>
         </div>
         <div class="col-sm-3">
-            <a href="#contacts" class="btn btn-lg btn-danger col-xs-12" ng-click="redirectToHomePage()">Cancel</a>
+            <a href="#contacts" class="btn btn-lg cancel-button col-xs-12" ng-click="redirectToHomePage()">Cancel</a>
         </div>
     </div>
 </form>
