@@ -17,6 +17,9 @@ a.edit:hover, a.delete:hover {
     padding: 5px;
 }
 
+.panel-heading {
+	min-height: 50px;
+}
 .panel-heading a {
 	color: black;
 }
