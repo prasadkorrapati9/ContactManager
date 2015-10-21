@@ -3,4 +3,4 @@
 <p class="text-center">
     <button class="btn btn-lg add-contact" ng-click="redirectToAddPage()">Add Contact</button>
 </p>
-<contact-tile contact-object="contact" delete-contact="deleteContact(contact)" ng-repeat="contact in contacts"></contact-tile>
+<contact-tile contact-object="contact" index="$index" delete-contact="deleteContact(index)" ng-repeat="contact in contacts"></contact-tile>

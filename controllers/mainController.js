@@ -5,9 +5,7 @@ contactManager.controller('mainController', ['$scope', '$log', '$location', 'uti
         $location.path('/add');
     }
 
-    $scope.deleteContact = function(contact) {
-        $scope.contacts.splice(utilityFactory.findById($scope.contacts, contact.id), 1);
+    $scope.deleteContact = function(index) {
+        $scope.contacts.splice(index, 1);
     }
-
-
 }]);

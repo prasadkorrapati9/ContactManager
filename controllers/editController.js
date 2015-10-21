@@ -16,8 +16,4 @@ contactManager.controller('editController', ['$scope', '$log', '$routeParams', '
         });
         $location.path('/contacts');
     };
-
-    $scope.redirectToHomePage = function () {
-        $location.path('/contacts');
-    };
 }]);

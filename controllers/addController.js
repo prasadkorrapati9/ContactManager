@@ -12,8 +12,4 @@ contactManager.controller('addController',['$scope', '$location', 'utilityFactor
         });
         $location.path('/contacts');
     };
-
-    $scope.redirectToHomePage = function () {
-        $location.path('/contacts');
-    };
 }]);

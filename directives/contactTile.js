@@ -5,6 +5,7 @@ contactManager.directive("contactTile", function() {
         replace: true,
         scope: {
             contactObject: "=",
+            index: '=',
             deleteContact: "&"
         },
         controller: function($scope) {

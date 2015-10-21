@@ -18,20 +18,8 @@ contactManager.config(function ($routeProvider) {
         templateUrl: 'pages/edit.html',
         controller: 'editController'
     })
-    
-});
 
-
-/*
-contactManager.directive("searchResult", function() {
-   return {
-       restrict: 'AECM',
-       templateUrl: 'directives/searchresult.html',
-       replace: true,
-       scope: {
-           personObject: "=",
-           formattedAddressFunction: "&"
-       }
-   }
+    .otherwise({
+        redirectTo: '/contacts'
+    });
 });
-*/
